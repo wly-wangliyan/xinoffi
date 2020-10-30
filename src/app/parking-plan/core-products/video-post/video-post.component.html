@@ -1,0 +1,66 @@
+<div id="body">
+  <div class="main-picture">
+    <div class="content">
+      <div class="product-name"><span>免布线</span>相机</div>
+      <div class="equipment">EQUIPMENT</div>
+    </div>
+  </div>
+  <div class="detail">
+    <div class="content">
+      <div class="content-top">
+        <img src="../../../../assets/img/设备.png">
+        <div>
+          <div class="product-name">{{detailData.productName}}</div>
+          <div class="red-line"></div>
+          <div class="product-introduction">{{detailData.productIntroduction}}</div>
+        </div>
+      </div>
+      <div class="content-bottom">
+        <div class="product-description">产品说明</div>
+        <div class="product-parameter">
+          <div class="parameter-title">功能特性</div>
+          <div class="characteristic-list">
+            <ng-container *ngFor="let item of detailData.functionalCharacteristic">
+              <div class="characteristic">{{item}}</div>
+            </ng-container>
+          </div>
+          <div class="parameter-title">技术参数</div>
+          <div class="data-table">
+            <table>
+              <tr>
+                <th>供电方式:</th>
+                <td>{{detailData.powerSupplyMode}}</td>
+                <th>像素:</th>
+                <td>{{detailData.pixel}}px</td>
+              </tr>
+              <tr>
+                <th>焦距类型:</th>
+                <td>{{detailData.focusType}}</td>
+                <th>其它特性:</th>
+                <td>{{detailData.otherFeatures}}</td>
+              </tr>
+              <tr>
+                <th>通讯方式:</th>
+                <td>{{detailData.communicationMode}}G</td>
+                <th>安装高度:</th>
+                <td>{{detailData.installationHeight}}米</td>
+              </tr>
+              <tr>
+                <th>识别率:</th>
+                <td>>{{detailData.recognitionRate}}%</td>
+                <th>识别距离:</th>
+                <td><{{detailData.recognitionDistance}}米</td>
+              </tr>
+              <tr>
+                <th>识别内容:</th>
+                <td>{{detailData.recognitionContent}}</td>
+                <th>识别方式:</th>
+                <td>{{detailData.recognitionStyle}}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
