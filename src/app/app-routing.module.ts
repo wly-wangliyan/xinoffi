@@ -16,18 +16,18 @@ import {VideoPostComponent} from './parking-plan/core-products/video-post/video-
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/nav/home',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
-    path: 'nav',
+    path: '',
     component: NavComponent,
     children: [
-      {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
-      },
+      // {
+      //   path: '',
+      //   redirectTo: '',
+      //   pathMatch: 'full'
+      // },
       {
         path: 'home',
         component: HomeComponent,

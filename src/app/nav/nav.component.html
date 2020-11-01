@@ -1,27 +1,26 @@
-<div class="nav-top" #targetDiv>
+<div class="nav-top" #targetDiv >
   <div class="nav-content">
     <div class="nav-logo">
-      <img src="../../assets/img/logo1.png" alt="">
+      <div class="log-img" #LogoImg></div>
     </div>
-    <div class="page-button-group">
-      <div>首页</div>
-      <div>城市级智慧停车方案</div>
-      <div>服务优势</div>
-      <div>关于我们</div>
+    <div class="page-button-group" #topMenu>
+      <div><a routerLink="/home" routerLinkActive="active" class="page-button">首页</a></div>
+      <div (mouseover)="displayMenuList()" (mouseleave)="unDisplayMenuList()">
+        <a routerLink="/parking-plan" routerLinkActive="active"  class="page-button">城市级智慧停车方案</a>
+        <ul style="display: none" #parkingPlanMenu>
+          <li><a routerLink="/parking-plan/business-scope">业务范围</a></li>
+          <li><a routerLink="/parking-plan/programme-overview">方案概述</a></li>
+          <li><a routerLink="/parking-plan/cooperation-cases">合作案例</a></li>
+          <li><a routerLink="/parking-plan/core-products">核心产品</a></li>
+        </ul>
+      </div>
+      <div><a routerLink="/service-advantages" routerLinkActive="active"  class="page-button">服务优势</a></div>
+      <div><a routerLink="/about-us" routerLinkActive="active" class="page-button">关于我们</a></div>
     </div>
   </div>
   <!--  <div style="width: 200px;height:60px;border: 1px solid red;margin-right: 19%"></div>-->
 </div>
+<div class="hidden-back" #hiddenBack></div>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
-
-
-<!--    <nz-anchor [nzAffix]="false" [nzOffsetTop]='150'>-->
-<!--      <nz-link nzHref="#body" nzTitle="首页"></nz-link>-->
-<!--      <nz-link nzHref="#overseas" nzTitle="城市级智慧停车方案"></nz-link>-->
-<!--      <nz-link nzHref="#message" nzTitle="服务优势"></nz-link>-->
-<!--      <nz-link nzHref="#contact" nzTitle="关于我们"></nz-link>-->
-<!--    </nz-anchor>-->
-<!--    <button mat-button [matMenuTriggerFor]="menu">Menu</button>-->
-<!-- #enddocregion mat-menu-trigger-for -->
 
