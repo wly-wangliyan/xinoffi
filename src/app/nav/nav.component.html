@@ -1,26 +1,40 @@
-<div class="nav-top" #targetDiv >
-  <div class="nav-content">
-    <div class="nav-logo">
-      <div class="log-img" #LogoImg></div>
-    </div>
-    <div class="page-button-group" #topMenu>
-      <div><a routerLink="/home" routerLinkActive="active" class="page-button">首页</a></div>
-      <div (mouseover)="displayMenuList()" (mouseleave)="unDisplayMenuList()">
-        <a routerLink="/parking-plan" routerLinkActive="active"  class="page-button">城市级智慧停车方案</a>
-        <ul style="display: none" #parkingPlanMenu>
-          <li><a routerLink="/parking-plan/business-scope">业务范围</a></li>
-          <li><a routerLink="/parking-plan/programme-overview">方案概述</a></li>
-          <li><a routerLink="/parking-plan/cooperation-cases">合作案例</a></li>
-          <li><a routerLink="/parking-plan/core-products">核心产品</a></li>
-        </ul>
+<div (mouseleave)="unDisplayMenuList()">
+  <div class="nav-top" #targetDiv>
+    <div class="nav-content">
+      <div class="nav-logo">
+        <div class="log-img" #LogoImg></div>
       </div>
-      <div><a routerLink="/service-advantages" routerLinkActive="active"  class="page-button">服务优势</a></div>
-      <div><a routerLink="/about-us" routerLinkActive="active" class="page-button">关于我们</a></div>
+      <div class="page-button-group" #topMenu>
+        <div><a routerLink="/home" routerLinkActive="active" class="page-button"
+                (mouseover)="unDisplayMenuList()">首页</a></div>
+        <div (mouseover)="displayParkingMenuList()" (mouseleave)="unDisplayParkingList()">
+          <a routerLink="/parking-plan" routerLinkActive="active" class="page-button">城市级智慧停车方案</a>
+          <ul style="display: none" #parkingPlanMenu>
+            <li><a routerLink="/parking-plan/business-scope">业务范围</a></li>
+            <li><a routerLink="/parking-plan/programme-overview">方案概述</a></li>
+            <li><a routerLink="/parking-plan/cooperation-cases">合作案例</a></li>
+            <li><a routerLink="/parking-plan/core-products">核心产品</a></li>
+          </ul>
+        </div>
+        <div><a routerLink="/service-advantages" routerLinkActive="active" class="page-button"
+                (mouseover)="unDisplayMenuList()">服务优势</a></div>
+        <div (mouseover)="displayAboutUsMenuList()" (mouseleave)="unDisplayAboutUsList()">
+          <a routerLink="/about-us" routerLinkActive="active" class="page-button"
+          >关于我们</a>
+          <ul style="display: none" #aboutUsMenu>
+            <li><a routerLink="/about-us/basic-info">基本情况</a></li>
+            <li><a routerLink="/about-us/development-history">发展历程</a></li>
+            <li><a routerLink="/about-us/enterprise-qualification">企业资质</a></li>
+            <li><a routerLink="/about-us/contact-us">联系我们</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <!--  <div style="width: 200px;height:60px;border: 1px solid red;margin-right: 19%"></div>-->
   </div>
-  <!--  <div style="width: 200px;height:60px;border: 1px solid red;margin-right: 19%"></div>-->
+  <div class="hidden-back" #hiddenBack></div>
 </div>
-<div class="hidden-back" #hiddenBack></div>
+
 <router-outlet></router-outlet>
 <app-footer></app-footer>
 

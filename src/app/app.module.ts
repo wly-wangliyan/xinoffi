@@ -24,6 +24,12 @@ import {CoreProductsComponent} from './parking-plan/core-products/core-products.
 import {WireFreeCameraComponent} from './parking-plan/core-products/wire-free-camera/wire-free-camera.component';
 import {VideoPostComponent} from './parking-plan/core-products/video-post/video-post.component';
 import {RoadsideCameraComponent} from './parking-plan/core-products/roadside-camera/roadside-camera.component';
+import { BasicInfoComponent } from './about-us/basic-info/basic-info.component';
+import { DevelopmentHistoryComponent } from './about-us/development-history/development-history.component';
+import { EnterpriseQualificationComponent } from './about-us/enterprise-qualification/enterprise-qualification.component';
+import { ContactUsComponent } from './about-us/contact-us/contact-us.component';
+import { RoadsideParkingSystemComponent } from './parking-plan/programme-overview/roadside-parking-system/roadside-parking-system.component';
+import { OutRoadsideParkingSystemComponent } from './parking-plan/programme-overview/out-roadside-parking-system/out-roadside-parking-system.component';
 
 registerLocaleData(zh);
 
@@ -43,6 +49,12 @@ registerLocaleData(zh);
     WireFreeCameraComponent,
     VideoPostComponent,
     RoadsideCameraComponent,
+    BasicInfoComponent,
+    DevelopmentHistoryComponent,
+    EnterpriseQualificationComponent,
+    ContactUsComponent,
+    RoadsideParkingSystemComponent,
+    OutRoadsideParkingSystemComponent,
   ],
   imports: [
     BrowserModule,

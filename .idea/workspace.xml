@@ -19,26 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddb87167-492b-4281-b2d3-ceb9b73d7119" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/智能背景.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/矢量智能对象 (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/footer/footer.component.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/footer/footer.component.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/nav/nav.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/nav/nav.component.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/nav/nav.component.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/nav/nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/nav/nav.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/parking-plan/core-products/roadside-camera/roadside-camera.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/parking-plan/core-products/roadside-camera/roadside-camera.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/parking-plan/core-products/roadside-camera/roadside-camera.component.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/parking-plan/core-products/roadside-camera/roadside-camera.component.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/parking-plan/core-products/roadside-camera/roadside-camera.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/parking-plan/core-products/roadside-camera/roadside-camera.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/parking-plan/core-products/video-post/video-post.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/parking-plan/core-products/video-post/video-post.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/parking-plan/core-products/video-post/video-post.component.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/parking-plan/core-products/video-post/video-post.component.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/parking-plan/core-products/video-post/video-post.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/parking-plan/core-products/video-post/video-post.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/parking-plan/core-products/wire-free-camera/wire-free-camera.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/parking-plan/core-products/wire-free-camera/wire-free-camera.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/parking-plan/core-products/wire-free-camera/wire-free-camera.component.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/parking-plan/core-products/wire-free-camera/wire-free-camera.component.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/parking-plan/parking-plan.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/parking-plan/parking-plan.component.html" afterDir="false" />
-    </list>
+    <list default="true" id="ddb87167-492b-4281-b2d3-ceb9b73d7119" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,6 +93,7 @@
       <workItem from="1604204143256" duration="2684000" />
       <workItem from="1604211829060" duration="2627000" />
       <workItem from="1604237437547" duration="10740000" />
+      <workItem from="1604293062917" duration="20000" />
     </task>
     <servers />
   </component>
