@@ -1,0 +1,16 @@
+<div id="body">
+  <div class="main-picture"></div>
+  <div class="plan-menu">
+    <div class="content">
+      <ul>
+        <li><a routerLink="/parking-plan/business-scope" routerLinkActive="active-route">业务范围</a></li>
+        <li><a routerLink="/parking-plan/programme-overview" routerLinkActive="active-route">方案概述</a></li>
+        <li><a routerLink="/parking-plan/cooperation-cases" routerLinkActive="active-route">合作案例</a></li>
+        <li><a routerLink="/parking-plan/core-products" routerLinkActive="active-route">核心产品</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="min-height: 1140px" [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+</div>

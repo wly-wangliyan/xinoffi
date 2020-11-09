@@ -1,1 +1,40 @@
+<div (mouseleave)="onMoveOutNavBar()" (mouseenter)="onMoveInNavBar()" (mouseover)="onMoveInNavBar()">
+  <div class="nav-top" #targetDiv>
+    <div class="nav-content">
+      <div class="nav-logo">
+        <div class="log-img" #LogoImg (click)="routerToHomePage()"></div>
+      </div>
+      <div class="page-button-group" #topMenu>
+        <div><a routerLink="/home" routerLinkActive="active" class="page-button" (click)="onClickScrollToTop()"
+        >首页</a></div>
+        <div (mouseover)="displayMenuList(parkingMenu)" (mouseleave)="unDisplayMenuList(parkingMenu)" #parkingMenu>
+          <a routerLink="/parking-plan" routerLinkActive="active" class="page-button" (click)="onClickScrollToTop()">城市级智慧停车方案</a>
+          <ul style="display: none" #parkingPlanMenu>
+            <li><a routerLink="/parking-plan/business-scope" (click)="onClickScrollToTop()">业务范围</a></li>
+            <li><a routerLink="/parking-plan/programme-overview" (click)="onClickScrollToTop()">方案概述</a></li>
+            <li><a routerLink="/parking-plan/cooperation-cases" (click)="onClickScrollToTop()">合作案例</a></li>
+            <li><a routerLink="/parking-plan/core-products" (click)="onClickScrollToTop()">核心产品</a></li>
+          </ul>
+        </div>
+        <div><a routerLink="/service-advantages" routerLinkActive="active" class="page-button" (click)="onClickScrollToTop()"
+        >服务优势</a></div>
+        <div (mouseover)="displayMenuList(aboutUsMenu)" (mouseleave)="unDisplayMenuList(aboutUsMenu)" #aboutUsMenu>
+          <a routerLink="/about-us" routerLinkActive="active" class="page-button"
+             (click)="onClickScrollToTop()" >关于我们</a>
+          <ul style="display: none" #aboutUsMenu>
+            <li><a routerLink="/about-us/basic-info" (click)="onClickScrollToTop()">基本情况</a></li>
+            <li><a routerLink="/about-us/development-history" (click)="onClickScrollToTop()">发展历程</a></li>
+            <li><a routerLink="/about-us/enterprise-qualification" (click)="onClickScrollToTop()">企业资质</a></li>
+            <li><a routerLink="/about-us/contact-us" (click)="onClickScrollToTop()">联系我们</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden-back" #hiddenBack></div>
+</div>
+
 <router-outlet></router-outlet>
+<app-footer></app-footer>
+
+

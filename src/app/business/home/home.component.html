@@ -1,0 +1,164 @@
+<div id="home">
+  <div class="home-banner">
+    <div class="content">
+      <div class="top-text">为服务而生&nbsp;&nbsp;携手共进</div>
+      <div class="middle-text">Born for service cooperate with you</div>
+      <div class="bottom-text">
+        以人为本，超值服务，极致体验
+        标准化、流程化、系统化
+      </div>
+      <img src="../../../assets/img/滑动提示.png">
+    </div>
+
+  </div>
+  <div class="company-introduction">
+    <div>
+      <div class="picture"></div>
+      <div class="about-us">
+        <img src="../../../assets/img/about_us.png">
+        <div class="introduction">
+          北京筑梦园科技有限公司成立于2014年，是一家致力于提供全场景一站式城市级智慧停车解决方案提供商，是“华为严选”，腾讯WeCity、长三角静态
+          交通一体化产业发展中心的生态合作伙伴，为城市管理者、停车场运营机构提供城市级智慧停车平台SAAS服务，实现停车服务的全场景覆盖，让沈阳成
+          为国内首个落地城市级智慧停车解决方案的城市，交通部ETC智慧停车平台唯一试点城市。
+        </div>
+        <div class="more-button"><a routerLink="/about-us/basic-info" (click)="onClickScrollToTop()">more</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="project-introduction">
+    <div>
+      <div class="picture"></div>
+      <div class="project-list" style="margin-left:120px">
+        <span class="dividing-line"></span>
+        <div class="project-box">
+          <img src="../../../assets/img/停车云平台_icon.png" style="margin: 35px 90px 16px 91px">
+          <div class="project-name" style="margin-left:62px">停车云平台</div>
+        </div>
+        <span class="dividing-line"></span>
+        <div class="project-box">
+          <img src="../../../assets/img/路内停车管理系统_icon.png" style="margin: 35px 91px 16px 90px">
+          <div class="project-name" style="margin-left:32px">路内停车管理系统</div>
+        </div>
+        <span class="dividing-line"></span>
+        <div class="project-box">
+          <img src="../../../assets/img/路外停车管理系统_icon.png" style="margin: 35px 90px 16px 90px">
+          <div class="project-name" style="margin-left:31px">路外停车管理系统</div>
+        </div>
+        <span class="dividing-line"></span>
+        <div class="project-box">
+          <img src="../../../assets/img/交通诱导系统_icon.png" style="margin: 35px 90px 16px 91px">
+          <div class="project-name" style="margin-left:54px">交通诱导系统</div>
+        </div>
+        <span class="dividing-line"></span>
+        <div class="project-box">
+          <img src="../../../assets/img/场内引导管理系统_icon.png" style="margin: 35px 90px 16px 91px">
+          <div class="project-name" style="margin-left:32px">场内引导管理系统</div>
+        </div>
+        <span class="dividing-line"></span>
+      </div>
+      <img src="../../../assets/img/car.png" style="position: relative;top: -33px;left: 120px">
+      <div class="more-button-content" (click)="routerToProgrammeOverview()">
+        <div class="more">more</div>
+        <img src="../../../assets/img/arrow.png">
+      </div>
+
+    </div>
+  </div>
+  <div class="product-display">
+    <div class="content">
+      <div class="title-picture"></div>
+      <div class="product-list">
+        <div [ngClass]="{'active':index == 0}" (click)="onClickChooseProduct($event)">
+          <div class="camera-name">免布线相机</div>
+        </div>
+        <div [ngClass]="{'active':index == 1}" (click)="onClickChooseProduct($event)">
+          <div class="camera-name">路牙相机</div>
+        </div>
+        <div [ngClass]="{'active':index == 2}" (click)="onClickChooseProduct($event)">
+          <div class="camera-name">视频桩</div>
+        </div>
+      </div>
+      <div class="product-detail">
+        <div class="wire-free-camera" [ngStyle]="{'display':index === 0 ? 'flex' : 'none'}">
+          <div class="product-picture">
+            <img src="../../../assets/img/设备.png">
+          </div>
+          <div class="product-introduce">
+            <div class="product-name">免布线相机</div>
+            <div class="red-line"></div>
+            <div class="description-text">
+              免布线中位相机是路内泊位的一对多检测设备，安装在3米高的位置处,通过定时抓拍的方式获
+              取被检测泊位的照片并将照片上传给云端识别服务器进行图像识别， 从而实现对泊位的自动检测
+              。免布线中位相机既可以检测车位的空闲状态、也可以识别停放车辆的车牌号码。 配合太阳能板
+              电池供电以及4G网络通信，免布线中位相机可以实现自循环，达到无电、无网、无现场维护的
+              使用状态。免布线中位相机可借杆安装，
+              能够降低施工成本、提高建设效率。
+            </div>
+            <div class="more-button"><a routerLink="/parking-plan/core-products/wire-free-camera"
+                                        (click)="onClickScrollToTop()">more</a></div>
+          </div>
+        </div>
+        <div class="luya-camera" [ngStyle]="{'display':index === 1 ? 'flex' : 'none' }">
+          <div class="product-picture">
+            <img src="../../../assets/img/路牙相机.png">
+          </div>
+          <div class="product-introduce">
+            <div class="product-name">路牙相机</div>
+            <div class="red-line"></div>
+            <div class="description-text">
+              路牙相机是路内泊位的一对一检测设备，安装在泊位前方的马路牙子上，通过定时抓拍的方式获取被检测泊位的照片并将照片上传给云端识别服务器进行图像识别，
+              从而实现对泊位的自动检测。路牙相机既可以检测车位的空闲状态、也可以识别停放车辆的车牌号码。配合太阳能板电池供电以及4G网络通信，路牙相机可以实现自循环，
+              达到无电、无网、无光、无现场维护的使用状态。路牙相机施工简单、安装方便，不会对市容市貌造成影响。
+            </div>
+            <div class="more-button"><a routerLink="/parking-plan/core-products/roadside-camera"
+                                        (click)="onClickScrollToTop()">more</a></div>
+          </div>
+        </div>
+        <div class="video-post" [ngStyle]="{'display':index === 2 ? 'flex' : 'none' }">
+          <div class="product-picture">
+            <img src="../../../assets/img/视频桩.png">
+          </div>
+          <div class="product-introduce">
+            <div class="product-name">视频桩</div>
+            <div class="red-line"></div>
+            <div class="description-text">
+              视频桩是路内泊位的一对一检测设备，安装在泊位前侧方的人行道边缘，通过定时抓拍的方式获取被检测泊位的照片并将照片上传给云端识别服务器进行图像识别，
+              从而实现对泊位的自动检测。 视频桩既可以检测车位的空闲状态、也可以识别停放车辆的车牌号码。配合太阳能板电池供电以及4G网络通信，视频桩可以实现自循环，
+              达到无电、无网、无光、无现场维护的使用状态。视频桩施工简单、安装方便，不会对市容市貌造成影响。
+            </div>
+            <div class="more-button">
+              <!--              <img src="./assets/img/more.png">-->
+              <a routerLink="/parking-plan/core-products/video-post" (click)="onClickScrollToTop()">more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parking-plan">
+    <div>
+      <img src="../../../assets/img/全场景智慧停车解决方案.png">
+    </div>
+
+  </div>
+  <div class="partner">
+    <div class="content">
+      <img src="../../../assets/img/合作伙伴.png">
+      <div class="partner-list">
+        <div>
+          <div class="img1"></div>
+          <div class="img2"></div>
+          <div class="img3"></div>
+          <div class="img4"></div>
+        </div>
+        <div>
+          <div class="img5"></div>
+          <div class="img6"></div>
+          <div class="img7"></div>
+          <div class="img8"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

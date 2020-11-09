@@ -1,0 +1,184 @@
+.cases {
+  width: 100%;
+  //height: 2100px;
+  background: #FFFFFF;
+  max-width: 1920px;
+  margin: auto;
+  min-width: 1440px;
+
+  .content {
+    width: 1200px;
+    //height: 1846px;
+    margin: auto;
+
+    .product-list {
+      display: flex;
+      flex-direction: row;
+      height: 141px;
+      margin: 80px 0px 0px 306px;
+      width: 587px;
+      justify-content: space-between;
+
+      .active {
+        background: url("../../../../assets/img/btn_select.png");
+
+        & > .case-name {
+          color: #FFFFFF !important;
+        }
+      }
+
+      & > div {
+        border: 1px solid #C7C7C7;
+        border-radius: 30px;
+        cursor: pointer;
+        width: 280px;
+        height: 60px;
+
+        & > .case-name {
+          border-radius: 30px;
+          line-height: 60px;
+          text-align: center;
+          width: 280px;
+          height: 60px;
+          font-size: 22px;
+          //font-family: Alibaba PuHuiTi;
+          font-weight: 500;
+          color: #302E3E;
+
+          &:hover {
+            background: rgba(0, 0, 0, .05);
+          }
+
+          &:active {
+            background: rgba(0, 0, 0, .1);
+          }
+        }
+      }
+    }
+
+    .cases-detail {
+      .city-cases {
+        display: flex;
+        flex-direction: column;
+
+        .first-description {
+          width: 1199px;
+          height: 48px;
+          font-size: 18px;
+          //font-family: Alibaba PuHuiTi;
+          font-weight: 400;
+          color: #302E3E;
+          line-height: 30px;
+          margin-top: 51px;
+        }
+
+        .second-description {
+          width: 1200px;
+          height: 47px;
+          font-size: 18px;
+          //font-family: Alibaba PuHuiTi;
+          //font-weight: 400;
+          color: #302E3E;
+          line-height: 30px;
+          margin-top: 51px;
+          margin-bottom: 174px;
+        }
+      }
+
+      .parking-group {
+        width: 1200px;
+        height: 697px;
+        //border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: space-between;
+
+        .one-group {
+          //border: 1px solid blue;
+          width: 386px;
+          height: 313px;
+          position: relative;
+
+          & > div {
+            width: 386px;
+            height: 260px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & > img {
+              width: auto;
+              height: auto;
+              max-width: 100%;
+              max-height: 100%;
+              transition: ease-in-out 300ms;
+              -moz-transition: ease-in-out 300ms; /* Firefox 4 */
+              -webkit-transition: ease-in-out 300ms; /* Safari 和 Chrome */
+              -o-transition: ease-in-out 300ms; /* Opera */
+
+              &:hover {
+                transform: scale(1.03);
+                -ms-transform: scale(1.03); /* IE 9 */
+                -moz-transform: scale(1.03); /* Firefox */
+                -webkit-transform: scale(1.03); /* Safari 和 Chrome */
+                -o-transform: scale(1.03);
+              }
+            }
+          }
+
+          .parking-title {
+            position: absolute;
+            top: 290px;
+            z-index: 2;
+            height: 23px;
+            line-height: 23px;
+            font-size: 24px;
+            //font-family: Alibaba PuHuiTi;
+            font-weight: 400;
+            color: #302E3E;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  margin: 72px 0px 87px 1048px;
+
+  & > div {
+    width: 64px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, .05);
+    }
+
+    &:active {
+      background: rgba(0, 0, 0, .1);
+    }
+
+    img {
+      display: block;
+      height: 28px;
+      width: 28px;
+      margin: 18px 18px 18px 18px;
+    }
+  }
+
+  .right-button {
+    margin-left: 24px;
+  }
+}

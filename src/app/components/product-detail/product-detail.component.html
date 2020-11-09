@@ -1,0 +1,37 @@
+<div class="detail">
+  <div class="content">
+    <div class="content-top">
+      <div class="product-picture">
+        <img src="{{productInfo.productUrl}}">
+      </div>
+      <div>
+        <div class="product-name">{{productInfo.productName}}</div>
+        <div class="red-line"></div>
+        <div class="product-introduction">{{productInfo.productIntroduction}}</div>
+      </div>
+    </div>
+    <div class="content-bottom">
+      <div class="product-description">产品说明</div>
+      <div class="product-parameter">
+        <div class="parameter-title">功能特性</div>
+        <div class="characteristic-list">
+          <ng-container *ngFor="let item of productInfo.functionalCharacteristic">
+            <div class="characteristic">{{item}}</div>
+          </ng-container>
+        </div>
+        <div class="parameter-title">技术参数</div>
+        <div class="data-table">
+          <table>
+            <tr *ngFor="let i of [0,1,2,3,4]">
+              <th>{{productInfo.attribute[2 * i].propertyName}}</th>
+              <td>{{productInfo.attribute[2 * i].propertyValue}}</td>
+              <th>{{productInfo.attribute[2 * i + 1].propertyName}}</th>
+              <td>{{productInfo.attribute[2 * i + 1].propertyValue}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

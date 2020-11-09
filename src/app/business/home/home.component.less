@@ -1,0 +1,477 @@
+#home {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-banner {
+  width: 100%;
+  height: 1040px;
+  background: url("../../../assets/img/banner.png") no-repeat center center;
+  min-width: 1440px;
+
+  .content {
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .top-text {
+      width: 647px;
+      height: 62px;
+      font-size: 66px;
+      //font-family: Alibaba PuHuiTi;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 81px;
+      margin-left: 146px;
+      margin-top: 413px;
+    }
+
+    .middle-text {
+      width: 371px;
+      height: 14px;
+      font-size: 20px;
+      font-family: Calibri;
+      font-weight: 300;
+      color: #FFFFFF;
+      line-height: 24px;
+      margin: 27px 0px 43px 146px;
+    }
+
+    .bottom-text {
+      width: 282px;
+      height: 52px;
+      font-size: 20px;
+      //font-family: Alibaba PuHuiTi;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 32px;
+      margin-left: 146px;
+    }
+
+    & > img {
+      width: 84px;
+      height: 72px;
+      margin-top: 326px;
+      margin-left: 678px;
+    }
+  }
+}
+
+.company-introduction {
+  width: 100%;
+  height: 564px;
+  background: #FFFFFF;
+  padding-top: 156px;
+  min-width: 1440px;
+
+  & > div {
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+    .picture {
+      background: url("../../../assets/img/qiye_img.png") no-repeat;
+      width: 391px;
+      height: 408px;
+      margin-left: 120px;
+    }
+  }
+
+  & .about-us {
+    display: flex;
+    flex-direction: column;
+    margin-left: 103px;
+    margin-top: 71px;
+
+    img {
+      background: url("../../../assets/img/about_us.png") no-repeat;
+      display: inline-block;
+      width: 518px;
+      height: 75px;
+    }
+
+    .introduction {
+      width: 699px;
+      height: 138px;
+      font-size: 18px;
+      //font-family: Alibaba PuHuiTi;
+      font-weight: 400;
+      color: #302E3E;
+      line-height: 30px;
+      margin-left: 1px;
+      margin-top: 54px;
+    }
+
+    .more-button {
+      margin-left: 8px;
+      margin-top: 46px;
+    }
+  }
+}
+
+.project-introduction {
+  width: 100%;
+  min-width: 1440px;
+  height: 989px;
+  background: linear-gradient(0deg, #E11D25 0%, #F02830 100%) no-repeat center center;
+  background-size: 1920px 1080px;
+  padding-top: 91px;
+
+  & > div {
+    width: 1440px;
+    height: 100%;
+    margin: auto;
+
+    & > .picture:first-child {
+      background: url("../../../assets/img/solutions.png") no-repeat;
+      width: 575px;
+      height: 75px;
+      margin: 0px auto 109px auto;
+    }
+  }
+
+
+  .project-list {
+    display: flex;
+    flex-direction: row;
+    //border: 1px solid black;
+    margin: auto;
+
+    .dividing-line {
+      width: 1px;
+      height: 180px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
+    }
+
+    .project-name {
+      width: 176px;
+      height: 21px;
+      font-size: 22px;
+      //font-family: Alibaba PuHuiTi;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 3px;
+      margin-top: 16px;
+    }
+  }
+
+  .more-button-content {
+    width: 180px;
+    height: 48px;
+    border: 1px solid #FFFFFF;
+    border-radius: 24px;
+    margin-left: 630px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      background: rgba(0, 0, 0, .05);
+    }
+
+    &:active {
+      background: rgba(0, 0, 0, .1);
+    }
+
+    .more {
+      width: 59px;
+      height: 15px;
+      line-height: 15px;
+      position: absolute;
+      left: 48px;
+      top: 16px;
+      z-index: 1;
+      font-size: 24px;
+      //font-family: Alibaba PuHuiTi;
+      color: #FFFFFF;
+      //border: 1px solid blue;
+    }
+
+    img {
+      position: absolute;
+      left: 123px;
+      top: 18px;
+      z-index: 2;
+    }
+  }
+}
+
+.product-display {
+  width: 100%;
+  height: 900px;
+  background: #FFFFFF;
+
+  .content {
+    width: 1440px;
+    height: 810px;
+    margin: 0 auto;
+    padding-top: 90px;
+  }
+
+  .title-picture {
+    margin-left: 448px;
+    background: url("../../../assets/img/products.png");
+    width: 549px;
+    height: 75px;
+  }
+
+  .product-list {
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 88px;
+    height: 142px;
+    margin-left: 273px;
+    width: 893px;
+    justify-content: space-between;
+
+    .active {
+      background-image: url("../../../assets/img/btn_select.png");
+
+      .camera-name {
+        font-weight: 500;
+        color: #FFFFFF !important;
+      }
+    }
+
+    & > div {
+      border: 1px solid #C7C7C7;
+      border-radius: 30px;
+      cursor: pointer;
+      width: 280px;
+      height: 60px;
+
+      .camera-name {
+
+        line-height: 60px;
+        text-align: center;
+        font-size: 22px;
+        //font-family: Alibaba PuHuiTi;
+        font-weight: 500;
+        color: #302E3E;
+        border-radius: 30px;
+        width: 280px;
+        height: 60px;
+
+        &:hover {
+          background: rgba(0, 0, 0, .05);
+        }
+
+        &:active {
+          background: rgba(0, 0, 0, .1);
+        }
+      }
+    }
+  }
+
+  .product-detail {
+    & > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 1194px;
+      //border: 1px solid blue;
+      margin-left: 120px;
+    }
+
+    .product-picture {
+      //background: url("../../assets/img/设备.png") no-repeat;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      //border: 1px solid red;
+      width: 382px;
+      height: 382px;
+
+      & > img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms; /* Firefox 4 */
+        -webkit-transition: ease-in-out 300ms; /* Safari 和 Chrome */
+        -o-transition: ease-in-out 300ms; /* Opera */
+
+        &:hover {
+          transform: scale(1.03);
+          -ms-transform: scale(1.03); /* IE 9 */
+          -moz-transform: scale(1.03); /* Firefox */
+          -webkit-transform: scale(1.03); /* Safari 和 Chrome */
+          -o-transform: scale(1.03);
+        }
+      }
+    }
+
+    .product-introduce {
+      width: 744px;
+      height: 100%;
+      //border: 1px solid yellow;
+
+      .product-name {
+        width: 160px;
+        height: 30px;
+        margin-top: 64px;
+        font-size: 32px;
+        //font-family: Alibaba PuHuiTi;
+        font-weight: 500;
+        color: #302E3E;
+      }
+
+      .red-line {
+        width: 71px;
+        height: 6px;
+        background: #E11D25;
+      }
+
+      .description-text {
+        width: 744px;
+        height: 138px;
+        margin: 49px 0px 33px 1px;
+        font-size: 18px;
+        //font-family: Alibaba PuHuiTi;
+        font-weight: 400;
+        color: #302E3E;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.parking-plan {
+  width: 100%;
+  min-width: 1440px;
+  height: 1060px;
+  background: url("../../../assets/img/bg.png") no-repeat center center;
+  padding-top: 75px;
+
+  & > div {
+    width: 1440px;
+    height: 100%;
+    margin: auto;
+
+    img {
+      display: block;
+      margin: auto;
+      width: 575px;
+      height: 75px;
+    }
+  }
+}
+
+.partner {
+  width: 100%;
+  min-width: 1440px;
+  height: 629px;
+  padding-top: 91px;
+
+  .content {
+    width: 1440px;
+    height: 100%;
+    margin: auto;
+    //border: 1px solid black;
+
+    & > img {
+      display: block;
+      margin-left: 487px;
+      margin-bottom: 131px;
+    }
+  }
+
+  .partner-list {
+    width: 1200px;
+    height: 222px;
+    margin: auto;
+    //border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: space-between;
+
+      .img(@url,@url1) {
+        width: 240px;
+        height: 50px;
+        background: @url no-repeat;
+
+        &:hover {
+          background: @url1 no-repeat;
+        }
+      }
+
+      .img1 {
+        .img(url("../../../assets/img/文兴.png"), url("../../../assets/img/文兴_active.png"))
+      }
+
+      .img2 {
+        .img(url("../../../assets/img/沈阳国际软件园.png"), url("../../../assets/img/沈阳国际软件园_active.png"))
+      }
+
+      .img3 {
+        .img(url("../../../assets/img/工商银行.png"), url("../../../assets/img/工商银行_active.png"))
+      }
+
+      .img4 {
+        width: 240px;
+        height: 50px;
+        background: url("../../../assets/img/平安.png");
+
+        &:hover {
+          background: url("../../../assets/img/平安_active.png") no-repeat;
+        }
+      }
+
+      .img5 {
+        width: 240px;
+        height: 50px;
+        background: url("../../../assets/img/科拓.png") no-repeat;
+
+        &:hover {
+          background: url("../../../assets/img/科拓_active.png") no-repeat;
+        }
+      }
+
+      .img6 {
+        width: 240px;
+        height: 50px;
+        background: url("../../../assets/img/捷顺.png") no-repeat;
+
+        &:hover {
+          background: url("../../../assets/img/捷顺_active.png") no-repeat;
+        }
+      }
+
+      .img7 {
+        width: 240px;
+        height: 50px;
+        background: url("../../../assets/img/道尔.png") no-repeat;
+
+        &:hover {
+          background: url("../../../assets/img/道尔_active.png") no-repeat;
+        }
+      }
+
+      .img8 {
+        width: 240px;
+        height: 50px;
+        background: url("../../../assets/img/创通.png") no-repeat;
+
+        &:hover {
+          background: url("../../../assets/img/创通_active.png") no-repeat;
+        }
+      }
+    }
+  }
+}
+
+
